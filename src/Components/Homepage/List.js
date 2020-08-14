@@ -29,11 +29,11 @@ export default class List extends Component {
             })   
         }
         
-        var output = this.state.list.map(item=>{
+        var output = this.state.list.map((item,index)=>{
                     return(
                         
 
-                            <tbody>
+                            <tbody key={index}>
                             <tr> 
                                  <td >
                                      <img className="mar" src={item.logo} alt=""/>
